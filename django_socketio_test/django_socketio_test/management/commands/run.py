@@ -5,7 +5,7 @@ monkey.patch_all()
 
 import os
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "linbang.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_socketio_test.settings")
 
 try:
     import pymysql
