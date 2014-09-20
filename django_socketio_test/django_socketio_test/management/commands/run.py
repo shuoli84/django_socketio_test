@@ -19,5 +19,5 @@ class Command(BaseCommand):
         from django.core.wsgi import get_wsgi_application
         application = get_wsgi_application()
         from socketio.server import SocketIOServer
-        server = SocketIOServer(('', 8000), application, resource="socket.io")
+        server = SocketIOServer(('', 8001), application, resource="socket.io")
         server.serve_forever()

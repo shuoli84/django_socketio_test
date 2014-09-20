@@ -3,15 +3,31 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Gevent-socketio Tests</title>
-  <script>WEB_SOCKET_SWF_LOCATION="/static/WebSocketMain.swf";</script>
+    <style>
+        .bottom_bar{
+            position: fixed;
+            bottom: 0;
+            background: dimgrey;
+            width: 100%;
+        }
+        #input{
+            width: 100%;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
   <script src="/static/js/jquery.js"></script>
+  <script src="/static/js/mousetrap.js"></script>
   <script src="/static/js/socket.io.js"></script>
   <script src="/static/js/index.js"></script>
 
   <div id="messages"></div>
-  <label for="input">Input</label>
-  <textarea id="input"></textarea>
+  <div class="bottom_bar">
+      <form method="POST" action="javascript:void(0)">
+          <p>ctrl+enter to submit</p>
+          <textarea id="input" class="mousetrap" rows="3"></textarea>
+      </form>
+  </div>
 </body>
 </html>

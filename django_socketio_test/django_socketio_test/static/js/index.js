@@ -1,4 +1,4 @@
-var socket = io('/echo');
+var socket = io.connect('/echo');
 socket.on('connect', function(){
   console.log('connected');
   socket.on('message', function(data){
