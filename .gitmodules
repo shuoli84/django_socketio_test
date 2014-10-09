@@ -1,3 +1,0 @@
-[submodule "django_socketio_test/gevent-socketio"]
-	path = django_socketio_test/gevent-socketio
-	url = git@github.com:shuoli84/gevent-socketio2.git
