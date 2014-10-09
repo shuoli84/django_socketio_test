@@ -1,17 +1,7 @@
 # coding=utf-8
-from django.core.management.base import BaseCommand
-from gevent import monkey
-monkey.patch_all()
-
 import os
-
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_socketio_test.settings")
-
-try:
-    import pymysql
-    pymysql.install_as_MySQLdb()
-except ImportError:
-    pass
+from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):

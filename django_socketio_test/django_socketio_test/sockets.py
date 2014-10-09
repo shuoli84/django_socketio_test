@@ -1,11 +1,8 @@
-import gevent
 from socketio.decorators import namespace
 import logging
 
 logger = logging.getLogger(__name__)
 
-
-print 'hello'
 
 @namespace('/echo')
 class EchoNamespace(object):
