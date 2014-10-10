@@ -16,6 +16,9 @@ Mousetrap.bind('ctrl+enter', function(e){
   if(text.length > 0){
     socket.emit('message', text);
     input_field.val('');
+
+    var blob = new Blob(['123', 'what', 'the', 'hell'])
+    socket.emit('message', blob)
   }
   return false;
 });
