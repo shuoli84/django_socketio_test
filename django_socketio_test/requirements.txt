@@ -7,4 +7,4 @@ greenlet==0.4.4
 pyee==0.1.0
 requests==2.4.1
 wsgiref==0.1.2
-
+gevent_socketio2==0.1.2
