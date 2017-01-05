@@ -1,10 +1,11 @@
-Django==1.7
-WebOb==1.4
-django-extensions==1.4.0
-gevent==1.0.1
+Django==1.10.4
+django-extensions==1.7.5
+gevent==1.2.0
+-e git+git@github.com:aarcro/gevent_socketio2.git@bfceec47999801538a5737bb04a13b95ea13e8cf#egg=gevent_socketio2
 gevent-websocket==0.9.3
 greenlet==0.4.4
-pyee==0.1.0
+pyee==3.0.1
 requests==2.4.1
-wsgiref==0.1.2
-gevent_socketio2==0.1.2
+six==1.10.0
+WebOb==1.4
+ws4py==0.3.4
